@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>Riffat's Cuisine</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+        <link href="font/Peaches and Cream Regular.otf">
+        <script src="https://kit.fontawesome.com/8b75f0d2e8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"> <img src="images/logo.png" width="200" height="100"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenuBar()"></i>
+                    <ul>
+                        <li><a href="mainMenu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenuBar()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>The Best Way to Eat</h1>
+                <p>Simple and delicious ready-to-cook and ready-to-eat meals.</p>
+                <a href="mainMenu.html" class="hero-btn">View our Menu</a>
+            </div>
+        </section>
+
+        <!--Menu-->
+        <section class="menu">
+            <h1>Our Menu</h1>
+            <p>Enjoy our ready to eat meals</p>
+
+            <div class="row">
+                <div class="row-col"> 
+                    <h3>First</h3>
+                    <p>blah blah</p>
+                </div>
+                <div class="row-col"> 
+                    <h3>Second</h3>
+                    <p>blah blah</p>
+                </div>
+                <div class="row-col"> 
+                    <h3>Third</h3>
+                    <p>blah blah</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Blog-->
+        <section class="blog">
+            <h1>Our Blog</h1>
+            <p>Description</p>
+            <div class="row">
+                <div class="blog_col">
+                    <img src="images/Davaat.jpg">
+                    <div class="layer">
+                        <h3>Davaat</h3>
+                    </div>
+                </div>
+                <div class="blog_col">
+                    <img src="images/chessCookies.jpg">
+                    <div class="layer">
+                        <h3>Chess Cookies</h3>
+                    </div>
+                </div>
+                <div class="blog_col">
+                    <img src="images/VegPizza.jpg">
+                    <div class="layer">
+                        <h3>Pizza Bites</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Events-->
+        <section class="events">
+            <h1>Our Events</h1>
+            <p>Stay on alert for our next event.</p>
+            <div class="row">
+                <div class="events_col">
+                    <img src="images/RC LOGO WHITE.png">
+                    <h3>White Logo</h3>
+                    <p>Our logo on a white background and colored in a fire gradient</p>
+                </div>
+                <div class="events_col">
+                    <img src="images/RCLOGOBLACK.png">
+                    <h3>Black Logo</h3>
+                    <p>Our logo on a black background and colored in a fire gradient</p>
+                </div>                
+                <div class="events_col">
+                    <img src="images/Redesigned Logo.png">
+                    <h3>Black and White Logo</h3>
+                    <p>Our logo in black and white for a more simple look</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Feedback/Reviews-->
+        <section class="review">
+            <h1>Reviews</h1>
+            <p>Read about what our customers say about us</p>
+            <div class="row">
+                <div class="review_col">
+                    <img src="images/Hina Jamil.jpg">
+                    <div>
+                        <p>Food is delicious and yummy biryani is one of my favorite dish!</p>
+                        <h3>Hina Jamil</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                <div class="review_col">
+                    <img src="images/Fadiyah Hussain.jpg">
+                    <div>
+                        <p>The food is so tasty and awesome variety, and fast and efficient servie. The spices and flavors were superb!</p>
+                        <h3>Fadiyah Hussain</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <!--Call to Action-->
+        <section class="cta">
+            <h1>Feeling hungry? Order from us online.</h1>
+            <a class="hero-btn" href="contact.html">CONTACT US</a>
+        </section>
+        
+        <!--Footer-->
+        <section class="footer">
+            <h4>About us</h4>
+            <p>At Riffat's Cuisine we will continue to operate to high standards, producing food with passion and delivering this to all 
+                <br>our new and existing customers within our amazing new space. Looking forward to seeing you soon!</p>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+                <p>Made by Muhammad Arsalan Saeed</p>
+        </section>
+
+        <!--JavaSscript for MenuBar-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenuBar() {
+                navLinks.style.right = "0";
+            }
+            function hideMenuBar() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>Riffat's Cuisine | Menu</title>
+        <link rel="stylesheet" href="style_mainMenu.css">
+        <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+        <link href="font/Peaches and Cream Regular.otf">
+        <script src="https://kit.fontawesome.com/8b75f0d2e8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"> <img src="images/logo.png" width="200" height="100"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenuBar()"></i>
+                    <ul>
+                        <li><a href="mainMenu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenuBar()"></i>
+            </nav>
+        </section>
+
+        <!--MenuPicture-->
+        <section class="menuPic">
+            <h1>Our Menu</h1>
+        </section>
+
+        <!--Call to Action-->
+        <section class="cta">
+              <a class="hero-btn" href="mainMenu.html">SHOW ALL</a>
+              <a class="hero-btn" href="start.html">STARTERS</a>
+              <a class="hero-btn" href="mains.html">MAINS</a>
+              <a class="hero-btn" href="dessert.html">DESSERT</a>
+        </section>
+
+        <!--Footer-->
+        <section class="footer">
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+                <p>Made by Muhammad Arsalan Saeed</p>
+        </section>
+
+        <!--JavaSscript for MenuBar-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenuBar() {
+                navLinks.style.right = "0";
+            }
+            function hideMenuBar() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
