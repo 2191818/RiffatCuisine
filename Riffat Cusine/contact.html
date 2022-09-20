@@ -28,8 +28,37 @@
         <!--Call to Action-->
         <section class="cta">
             <h1>Feeling hungry? Order from us online.</h1>
-            <a class="hero-btn" href="contact.html">CONTACT US</a>
         </section>
+
+        <!--Contact Form-->>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>CONTACT US</h3>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea name="message" rows="4" placeholder="Please input order/message"></textarea>
+                <button type="sumbit">Submit</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "kingdaxter360@gmail.com",
+                    Password : "umroot#1",
+                    To : 'arsalan.m.saeed@outlook.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name:   " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Phone: " + document.getElementById("phone").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Sucessfully")
+                );}
+        </script>
         
         <!--Footer-->
         <section class="footer">

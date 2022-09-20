@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'SF Pro Display', sans-serif;
 }
 
@@ -10,8 +11,6 @@
 }
 
 .header{
-    min-height: 100vh;
-    width: 100%;
     background-position: center;
     position: relative;
 }
@@ -120,6 +119,49 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+}
+
+/*--contant form--*/
+.container{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+form{
+    background-color: oldlace;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: firebrick;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px; 
 }
 
 /*--call to action--*/
